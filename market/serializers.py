@@ -21,7 +21,7 @@ class CustomUserSerializers(serializers.ModelSerializer):
         password = data['password']
         if not password.isalnum:
             raise serializers.ValidationError('parol harf va raqamlardan iborat bolishi kerak')
-        if data['password']
+        if data['password']:
         print(photo.name)
         if not photo.name.endswith(("png", "jpg", 'PNG', "Jpg", "JPG", "JPEG", "jpeg", "Webp")):
             raise serializers.ValidationError('notogri file kiritildi.')
